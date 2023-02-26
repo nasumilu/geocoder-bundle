@@ -1,26 +1,34 @@
 {
   "name": "nasumilu/geocoder-bundle",
   "type": "symfony-bundle",
-  "repositories": [
-    {
-      "type": "path",
-      "url": "../geocoder",
-      "options": {
-        "symlink": true
-      }
-    }
-  ],
   "require": {
     "symfony/http-kernel": "^v6.2",
-    "nasumilu/geocoder": "dev-main"
+    "symfony/console": "^6.2",
+    "symfony/translation": "^6.2",
+    "nasumilu/geocoder": "^v1.0"
   },
   "require-dev": {
     "phpunit/phpunit": "^10.0"
   },
   "autoload": {
-    "Nasumilu\\GeocoderBundle\\": "src/"
+    "psr-4": {
+      "Nasumilu\\GeocoderBundle\\": "src/"
+    }
   },
   "autoload-dev": {
-    "Nasumilu\\GeocoderBundle\\Tests\\": "tests/"
+    "psr-4": {
+      "Nasumilu\\GeocoderBundle\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "thanks": {
+      "name": "nasumilu/geocoder-bundle",
+      "url": "https://github.com/nasumilu/geocoder-bundle"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "symfony/flex": true
+    }
   }
 }
