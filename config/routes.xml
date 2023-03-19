@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <routes xmlns="http://symfony.com/schema/routing" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://symfony.com/schema/routing https://symfony.com/schema/routing/routing-1.0.xsd">
-    <route id="nasumilu_geocoder.geocode" path="/geocode" methods="GET|OPTIONS"
+    <route id="nasumilu_geocoder.geocode" path="/geocode" methods="GET"
            controller="Nasumilu\GeocoderBundle\Controller\GeocoderController"/>
 
-    <route id="nasumilu_geocoder.reverse_geocode" path="/reverse-geocode" methods="GET|OPTIONS"
+    <route id="nasumilu_geocoder.reverse_geocode" path="/reverse-geocode" methods="GET"
            controller="Nasumilu\GeocoderBundle\Controller\ReverseGeocoderController"/>
 </routes>
